@@ -1,0 +1,17 @@
+Package: missHybrid
+Title: Imputation of Missing data with Two-Phase Hybrid Approach
+Version: 0.1.0
+Authors@R: 
+    person("Kai", "Xia", , "kxia@med.unc.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Depends: 
+    R (>= 3.1)
+Imports:
+    missForest,
+    missMDA,
+    softImpute,
+    bnstruct
