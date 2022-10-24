@@ -17,7 +17,21 @@ if(!requireNamespace("devtools", quietly = TRUE))
     install.packages("devtools")
 devtools::install_github("argossy/missHybrid@main")
 
-library(missHyb)
+
+
+
+
+
+
+
+```
+
+The package includes reference manual, sample data and a Vignette.
+
+## Basic Usage
+
+```r
+library(missHybrid)
 
 ## simulate data
 n = 100
@@ -44,50 +58,6 @@ Ximp = missHyb(X = dat, p1 = 'MF', p2 = 'MDA')
 
 # Specify two phase method, phase 1: KNN; phase 2: missMDA
 Ximp = missHyb(X = dat, p1 = 'KNN', p2 = 'MDA')
-
-
-
-
-
-
-```
-
-The package includes reference manual, sample data and a Vignette.
-
-## Basic Usage
-
-```r
-library(missHybrid)
-#library(missHyb)
-
-library(devtools)
-dir1 = '../../..' # if on PC and linux if folder is correctly placed
-#load_all(sprintf('%s/missHybrid',dir1))
-
-source('./hybrid_impute.R')
-## simulate data
-n = 100
-p = 10
-dat = matrix(rnorm(1000), 100,10)
-
-## 10% missing
-mis_rate = 0.1
-for(j in 1:p){
-  idx_mis = sample(1:n, n * mis_rate, replace = FALSE)
-  dat[idx_mis, j ] = NA
-}
-
-# examples of two-phase imputation
-# phase 1: missMDA; phase 2: missForest
-Ximp = missHyb(X = dat, p1 = 'MDA', p2 = 'MF') # or missHyb(dat, 'MDA', 'MF')
-
-# phase 1: missForest; phase 2: MDA
-Ximp = missHyb(X = dat, p1 = 'MF', p2 = 'MDA')
-
-# phase 1: KNN; phase 2: missMDA
-Ximp = missHyb(X = dat, p1 = 'KNN', p2 = 'MDA')
-
-
 
 
 
