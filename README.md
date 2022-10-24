@@ -24,6 +24,10 @@ The package includes reference manual, sample data and a Vignette.
 
 ```r
 library(missHybrid)
+library(softImpute)
+library(missForest)
+library(missMDA)
+library(bnstruct)
 
 ## simulate data
 n = 100
