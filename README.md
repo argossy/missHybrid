@@ -16,14 +16,6 @@ To install `missHybrid` directly from GitHub, run
 if(!requireNamespace("devtools", quietly = TRUE))
     install.packages("devtools")
 devtools::install_github("argossy/missHybrid@main")
-
-
-
-
-
-
-
-
 ```
 
 The package includes reference manual, sample data and a Vignette.
