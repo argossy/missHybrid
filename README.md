@@ -17,13 +17,8 @@ if(!requireNamespace("devtools", quietly = TRUE))
     install.packages("devtools")
 devtools::install_github("argossy/missHybrid@main")
 
-#library(missHyb)
+library(missHyb)
 
-library(devtools)
-dir1 = '../../..' # if on PC and linux if folder is correctly placed
-#load_all(sprintf('%s/missHybrid',dir1))
-
-source('./hybrid_impute.R')
 ## simulate data
 n = 100
 p = 10

@@ -4,10 +4,10 @@
 # if (!require(bnstruct)) install.packages('bnstruct')
 #
 
-# library(softImpute)
-# library(missForest)
-# library(missMDA)
-# library(bnstruct)
+library(softImpute)
+library(missForest)
+library(missMDA)
+library(bnstruct)
 #
 
 ### master programme
