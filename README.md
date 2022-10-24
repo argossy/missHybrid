@@ -18,7 +18,7 @@ if(!requireNamespace("devtools", quietly = TRUE))
 devtools::install_github("argossy/missHybrid@main")
 ```
 
-The package includes reference manual, sample data and a Vignette.
+The package includes user guide and sample data.
 
 ## Basic Usage
 
