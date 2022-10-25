@@ -32,7 +32,7 @@ library(bnstruct)
 ## simulate data
 n = 100
 p = 10
-dat = matrix(rnorm(1000), 100,10)
+dat = matrix(rnorm(n*p), n,p)
 
 ## 10% missing
 mis_rate = 0.1
